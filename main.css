@@ -1,0 +1,246 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  background-image: url(../images/Layer2.png);
+  background-size: cover;
+  filter: grayscale(0.5);
+}
+header nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  height: 100px;
+}
+header nav .navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 3vh;
+}
+header nav .navLinks li {
+  padding: 1vw;
+}
+header nav .navLinks li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+header nav .image1 {
+  margin-top: 3vh;
+}
+header nav .image2 {
+  margin-top: 5vh;
+}
+header .container {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+}
+header .container p {
+  margin-top: 125px;
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-weight: 100;
+}
+header .container h1 {
+  font-size: 50px;
+  width: 53%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 125px;
+}
+header .container a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  width: 20vh;
+  background: linear-gradient(45deg, #d501ff 10%, #e6d815 90%);
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 200px;
+}
+
+.aboutUs {
+  height: 500px;
+  background: linear-gradient(45deg, #fd3fb3 0%, #fd3e4f 100%);
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutUs h2 {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  margin-left: 19vw;
+  margin-bottom: -15vh;
+  font-weight: bolder;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  font-size: 36px;
+}
+.aboutUs > div {
+  width: 90%;
+  margin: 0 auto;
+  width: 1400px;
+}
+.aboutUs > div p {
+  font-size: 35px;
+  width: 93%;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  font-weight: 200;
+}
+.aboutUs a {
+  width: 10vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0px;
+  font-weight: bold;
+  border: 3px solid white;
+  border-radius: 25px;
+  margin-left: 72vw;
+}
+
+.numbers {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+.numbers ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  position: absolute;
+  width: 85%;
+  height: 300px;
+}
+.numbers ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  width: 30%;
+  z-index: 1;
+  transition: 0.2s ease;
+}
+.numbers ul li .container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin-top: 10vh;
+  margin-left: 10%;
+}
+.numbers ul li .container h3 {
+  font-size: 23px;
+  font-weight: 900;
+}
+.numbers ul li .container p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: -0.5px;
+  width: 60%;
+}
+.numbers ul li .numberBackground {
+  position: relative;
+  top: -40%;
+  right: 15%;
+  font-size: 150px;
+  font-weight: 900;
+  z-index: 0;
+  color: rgba(228, 88, 88, 0.3);
+}
+.numbers ul li:hover {
+  color: white;
+  background: linear-gradient(45deg, #fd3fb3 0%, #fd3e4f 100%);
+  cursor: pointer;
+}
+.numbers ul li:hover .container {
+  transform: translateY(0px);
+}
+.numbers ul li:hover .numberBackground {
+  color: white;
+  font-size: 50px;
+  transform: translateX(-80px) translateY(-60px);
+}
+
+/*# sourceMappingURL=main.css.map */
